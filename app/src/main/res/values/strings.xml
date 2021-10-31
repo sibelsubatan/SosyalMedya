@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SOSYAL MEDYA</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gerekli_alan">Lütfen Gerekli Alanları Doldurun</string>
+    <string name="mail_veya_sifre">E-mail veya şifre yanlış</string>
+    <string name="sifrelerAyniDeğil">Şifreler aynı değil.</string>
+    <string name="gonderiOlustu">Yeni gönderi oluşturuldu.</string>
+    <string name="basarili">Kayıt yapıldı.</string>
+    <string name="basarisiz">Kayıt yapılamadı.</string>
+    <string name="problem">Bir problem meydana geldi.</string>
+    <string name="LoginAlertLogin">Lütfen bekleyiniz.</string>
+    <string name="Register">Kullanıcı Kaydı Gerçekleşiyor Lütfen Bekleyiniz.</string>
+    <string name="KayitYapildi">Kullanıcı kaydı yapıldı.</string>
+    <string name="ResimEkle">Resim ekleyiniz.</string>
+    <string name="NewPost">Gönderi oluşturuluyor.Lütfen bekleyiniz.</string>
+    <string name="EditProfile">Bilgileriniz Güncelleniyor Lütfen Bekleyiniz.</string>
+    <string name="Guncellendi">Bilgileriniz güncellendi.</string>
+</resources>

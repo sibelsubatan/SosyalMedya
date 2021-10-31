@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_ProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditProfileAppBarLayout">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/Profile_Toolbar"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/profile_fragment_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profil Düzenleme"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+                <ImageButton
+                    android:id="@+id/edit_profile_exit_btn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_icons8_multiplication_50"
+                    android:background="@color/white"
+                    android:layout_marginRight="20dp"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/EditProfileAppBarLayout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ProfileAppBarLayout">
+
+        <LinearLayout
+            android:id="@+id/tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:gravity="center"
+              >
+              <de.hdodenhof.circleimageview.CircleImageView
+                  android:id="@+id/profile_image_view_profile_fragment"
+                  android:layout_width="130dp"
+                  android:layout_height="130dp"
+                  android:layout_below="@+id/app_bar_profile_layout"
+                  android:layout_centerHorizontal="true"
+                  android:layout_marginTop="20dp"
+                  android:src="@drawable/ic_user_1" />
+              <TextView
+                  android:id="@+id/change_image_text_btn"
+                  android:layout_below="@+id/profile_image_view_profile_fragment"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Resim seçiniz"
+                  android:layout_centerHorizontal="true"
+                  android:textStyle="bold"
+                  android:layout_marginTop="10dp"
+                  android:textSize="16dp"
+                  android:textColor="@color/black"/>
+          </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:layout_marginBottom="30dp">
+
+                    <TextView
+                        android:id="@+id/total_posts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kullanıcı Adı:"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                       />
+                    <EditText
+                        android:id="@+id/KullaniciAdi_Edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:backgroundTint="@color/blue"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:layout_marginBottom="30dp">
+
+                    <TextView
+                        android:id="@+id/total_Followers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Biyografi:"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="@color/black" />
+                    <EditText
+                        android:id="@+id/bio_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:maxLines="20"
+                        android:backgroundTint="@color/blue"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:layout_marginBottom="30dp">
+
+                    <TextView
+                        android:id="@+id/total_Following"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Şifre"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="@color/black" />
+                    <EditText
+                        android:id="@+id/PasswordEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:backgroundTint="@color/blue"/>
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/Save_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_below="@+id/PasswordEdit"
+                    android:textAllCaps="false"
+                    android:text="KAYDET"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:background="@color/blue"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
+</layout>

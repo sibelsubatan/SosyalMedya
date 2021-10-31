@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "935726805532",
+    "firebase_url": "https://sosyalmedya2-e3716-default-rtdb.firebaseio.com",
+    "project_id": "sosyalmedya2-e3716",
+    "storage_bucket": "sosyalmedya2-e3716.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935726805532:android:5a883987bf0e411d1025d9",
+        "android_client_info": {
+          "package_name": "com.example.sosyalmedya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935726805532-5fqvjnp5kh7fhefcdt11j8bs55f9ln5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4e12xOhpL97a8z9IZPKBrBjgk2Dg0Mz4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935726805532-5fqvjnp5kh7fhefcdt11j8bs55f9ln5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
